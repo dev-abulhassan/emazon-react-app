@@ -6,7 +6,10 @@
    align-items: center;
    background: #1c2b35;
 }
+.header img{
+   width: 130px;
+}
 .menu a{
-   padding-left: 20px;
+   padding-left: 30px;
    color: white;
 }
