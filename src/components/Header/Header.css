@@ -1,0 +1,12 @@
+.header {
+   height: 80px;
+   display: flex;
+   padding: 0 100px;
+   justify-content: space-between;
+   align-items: center;
+   background: #1c2b35;
+}
+.menu a{
+   padding-left: 20px;
+   color: white;
+}
