@@ -10,10 +10,6 @@
    margin: 40px;
 }
 .card-container{
-   background-color: rgba(255, 166, 0, 0.616);
-}
-.card-container h2{
-   text-align: center;
-   padding-top: 30px;
-   color: #fff;
+   margin-top: 45px;
+   padding-right: 25px;
 }

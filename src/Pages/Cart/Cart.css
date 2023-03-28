@@ -1,0 +1,22 @@
+.cart {
+   background-color: #1C2B35;
+   padding: 30px;
+   color: #fff;
+   position: sticky;
+   top: 30px;
+}
+
+.cart h2 {
+   text-align: center;
+}
+
+.cart-item {
+   padding-top: 30px;
+}
+
+.cart-item p {
+   border-bottom: 1px solid gray;
+   width: 200px;
+   padding: 5px 0;
+   font-size: 17px;
+}
