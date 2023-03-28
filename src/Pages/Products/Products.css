@@ -17,7 +17,7 @@
    padding-bottom: 15px;
 }
 
-.all-product button {
+.all-product .addToCart {
    background: #ffa705ad;
    padding: 10px 93px;
    position: absolute;
