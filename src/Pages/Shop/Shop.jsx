@@ -12,16 +12,25 @@ const Shop = () => {
          .then(res => res.json())
          .then(data => setProducts(data))
    }, []);
-   useEffect(()=>{
+   useEffect(() => {
       const storedCart = getShoppingCart()
-      console.log(storedCart)
-   }, [])
+      const saveCart = []
+      for (const id in storedCart) {
+         const savedProduct = products.find(product => product.id === id)
+         if (savedProduct) {
+            const quantity = storedCart[id];
+            savedProduct.quantity = quantity
+            saveCart.push(savedProduct);
+         }
+      }
+      setCart(saveCart)
+   }, [products])
    const addToCart = (product) => {
       const newCart = [...cart, product];
       setCart(newCart)
       addToDb(product.id)
    }
-   
+
    return (
       <div className='shop-container'>
          <div className="products-container">
