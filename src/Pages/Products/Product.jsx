@@ -16,7 +16,16 @@ const Product = (props) => {
     };
   
     const toastify = () => {
-      toast("Your products added");
+      toast.success('🤗 WoW Your Product Added!', {
+         position: "top-right",
+         autoClose: 5000,
+         hideProgressBar: false,
+         closeOnClick: true,
+         pauseOnHover: true,
+         draggable: true,
+         progress: undefined,
+         theme: "dark",
+         });
     };
 
    // const addToCart = props.addToCart
@@ -36,7 +45,18 @@ const Product = (props) => {
          </div>
          <button className='addToCart' onClick={() => addToCart(props.product)}>Add To Cart
             <FontAwesomeIcon icon={faCartShopping} style={{ color: "#000000", }} />
-            <ToastContainer />
+            <ToastContainer
+               position="top-right"
+               autoClose={5000}
+               hideProgressBar={false}
+               newestOnTop={false}
+               closeOnClick
+               rtl={false}
+               pauseOnFocusLoss
+               draggable
+               pauseOnHover
+               theme="dark"
+               />
          </button>
       </div>
    );
